@@ -4,7 +4,7 @@ int main(){
 	scanf("%i",&num);
 	int increase = 0 , decrease = 0 , count = 0;
 	for(;num > 0 ;){
-		pre = num % 10;//7
+		pre = num % 10; //7
 		num/=10; //23456
 		count++;
 		prs = num % 10; //6
@@ -17,7 +17,7 @@ int main(){
 		else{
 		printf("Mixed number.");
 	    }
-		num /= 10;	
+		num /= 10; 
 	}
 	if(increase == count){
 		printf("Ascending order");

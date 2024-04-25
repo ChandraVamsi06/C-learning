@@ -1,11 +1,12 @@
 #include<stdio.h>
-void update(int *a){
-    *a += 10;
+void AddOne(int *ptr){
+	(*ptr)++;
+	printf("%d\n",*ptr);
 }
-int main()
-{
-    int num1 = 15;
-    int *a = &num1;
-    update(*a);
-    printf("%d",*a);
+int main(){
+	int n=10;
+	int *ptr = &n;
+	AddOne(ptr);
+	printf("%d", n);
+	return 0;
 }
