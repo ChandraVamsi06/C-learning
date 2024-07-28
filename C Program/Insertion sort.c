@@ -21,9 +21,9 @@ void insertion_sort(int *arr, int size){
 		}
 		printf("\n");
 	}
-	for(i = 0; i < size; i++){
-		printf("%d ",arr[i]);
-	}
+//	for(i = 0; i < size; i++){
+//		printf("%d ",arr[i]);
+//	}
 	printf("\n");
 }
 int main()

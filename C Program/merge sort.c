@@ -39,11 +39,11 @@ void merge(int *arr, int l, int m, int h){
 		k++;
 	}
 }
-void merge_sort_cheyyi(int *arr, int l, int h){
+void merge_sort(int *arr, int l, int h){
 	if(l < h){
 		int m = (l + h) / 2;
-		merge_sort_cheyyi(arr,l,m);
-		merge_sort_cheyyi(arr,m + 1,h);
+		merge_sort(arr,l,m);
+		merge_sort(arr,m + 1,h);
 		merge(arr,l,m,h);
 	}
 }
@@ -61,4 +61,5 @@ int main()
 	merge_sort_cheyyi(arr,0,n-1);
 	printf("After Sorting : ");
 	print_array(arr,n);
+	return 0;
 }
